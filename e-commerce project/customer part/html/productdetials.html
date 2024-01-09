@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/customer part/css/proddetials.css">
+    <script src="https://kit.fontawesome.com/2924b03037.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div class="logo">
+            <h2><span>A</span>NTIQ</h2>
+        </div>        
+        <ul>
+            <li><a href="/customer part/html/customerSign.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Contact us</a></li>
+            <li><a href="#"><i class="fa-solid fa-bars"></i></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="/customer part/html/wishlist.html"> <i class="fa-solid fa-heart"></i> Wish List</a></li>
+                        <li><a href="/customer part/html/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                        <li> <a href="/customer part/html/profile.html"><i class="fa-solid fa-user"></i> Profile</i></a></li>
+                        <li class="logout"><a><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+            <div>
+                <p>all Products <i style="font-size: 10px;" class="fa-solid fa-chevron-right"></i> <span
+                        id="prodcat"></span></p>
+            </div>
+            <div class="images">
+                <div class="img-holder active">
+                    <img id="mainimg"
+                        src="https://us.123rf.com/450wm/bananyakosensei/bananyakosensei1810/bananyakosensei181000089/110200980-ic%C3%B4ne-de-chargement-monochrome-de-vecteur-mise-%C3%A0-jour-du-syst%C3%A8me-arri%C3%A8re-plan-du-processus-de.jpg?ver=6"
+                        alt="">
+                </div>
+                <div class="img-holder">
+                    <img id="img1" onclick="change(this)" alt="">
+                </div>
+                <div class="img-holder">
+                    <img id="img2" onclick="change(this)" alt="">
+                </div>
+                <div class="img-holder">
+                    <img id="img3" onclick="change(this)" alt="">
+                </div>
+            </div>
+            <!-- <div class="title">
+                <h1>Midoriya Deku</h1>
+            </div> -->
+            <div class="basic-info">
+                <h1 id="prodname"></h1>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span id="prodprice"></span>
+                <div class="option">
+                    <form action="" class="formcart">
+                        <input name="quant" type="number" id="quantid" min="1" required >
+                        <button type="submit" class="btn btn-cart">
+                            Buy It Now
+                        </button>
+                    </form>
+
+                    <button type="button" class="btn btn-Wish ">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="description">
+                <p id="proddescr">
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer" id="about">
+
+            <div class="row">
+                watching our perfect Sellers's Products
+            </div>
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+
+
+            <div class="row">
+                HandMade Copyright © 2023 ITI Students - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/customer part/js/proddetials.js"></script>
+    <script>
+        let mainimg = document.querySelector("#mainimg");
+
+        function change(e) {
+            mainimg.src = e.src;
+        }
+
+    </script>
+</body>
+
+</html>

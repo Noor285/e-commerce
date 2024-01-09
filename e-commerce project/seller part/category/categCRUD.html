@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- add CSS -->
+    <link rel="stylesheet" href="categCRUD.css">
+    <script src="https://kit.fontawesome.com/2924b03037.js" crossorigin="anonymous"></script>
+    <title>Category</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+             <h2><span>A</span>NTIQ</h2>
+        </div>
+    </nav>
+    <nav class="sidebar">
+        <div class="menu_content">
+            <div class="profile">
+                <div class="picture">
+                    <a href="#">
+                        <i class="fa-solid fa-pen"></i>
+
+                    </a>
+                    <img src="img/user.png" alt="">
+                    <div id="sellername">User name</div>
+                </div>
+
+            </div>
+            <ul class="menu_items">
+                <li class="menu_item" >
+                    <a href="#" class="nav_link prod">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span class="navlink">Product</span>
+                    </a>
+                </li>
+                <li class="menu_item" id="this">
+                    <a class="nav_link catego">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class="navlink">Category</span>
+                    </a>
+                </li>
+                <li class="menu_item" >
+                    <a class="nav_link order">
+                        <span class="navlink_icon ">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </span>
+                        <span class="navlink">Order Status</span>
+                    </a>
+                </li>
+                <li class="menu_item" >
+                    <a class="nav_link lstord">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-list-ol"></i>
+                        </span>
+                        <span class="navlink">Last Order</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="nav_link logout">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </span>
+                        <span class="navlink">Log out</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="contai">
+            <header>
+                <h3>List Category</h3>
+            </header>
+            
+            <div class="select-seacrh">
+    
+                <h3>Select Category</h3>
+                <select id="selectcateg" class="custom-select">
+                    
+                    
+                </select>
+            </div>
+            <div class="table-wrapped">
+                <table class="table-products">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" name="" id="all"></th>
+                            <th>Name</th>
+                            <th>img</th>
+                            <th>category</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            
+                        </tr>
+                    </thead>
+    
+                    <tbody id="tbdyprod">
+                        
+                    </tbody>
+    
+                </table>
+                <div id="loading-icon" class="loading-icon"></div>
+                <button class="btn btn-edit">
+                    Update
+                </button>
+                <button class="btn btn-delete ">
+                    delete
+                </button>
+    
+            </div>
+            <div class="add-model model-wrapper">
+                <div class="model">
+                    <div class="model-header">
+                        <h3>Update Category</h3>
+                    </div>
+                    <div class="model-body">
+                        <form action="" class="form" autocomplete="off">
+                            <input type="text" name="category" id="catid" placeholder="Category">
+                            <button class="btn btn-model" type="submit">Submit</button>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="footer" id="about">
+        
+              <div class="row">
+                Sharing with our Customer Your Perfect Products
+              </div>
+              <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+        
+             
+        
+              <div class="row">
+                HandMade Copyright © 2023 ITI Students - All rights reserved
+              </div>
+            </div>
+          </footer>
+
+    </div>
+
+    <script src="sidebar.js"></script>
+    <script type="module" src="siderdata.js"></script>
+</body>
+
+</html>

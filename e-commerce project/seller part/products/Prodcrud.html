@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- add CSS -->
+    <link rel="stylesheet" href="Prodcrud.css">
+    <script src="https://kit.fontawesome.com/2924b03037.js" crossorigin="anonymous"></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <h2><span>A</span>NTIQ</h2>
+        </div>
+    </nav>
+    <nav class="sidebar">
+        <div class="menu_content">
+            <div class="profile">
+                <div class="picture">
+                    <a href="#">
+                        <i class="fa-solid fa-pen"></i>
+
+                    </a>
+                    <img src="img/user.png" alt="">
+                    <div id="sellername">User name</div>
+                </div>
+
+            </div>
+            <ul class="menu_items">
+                <li class="menu_item" id="this">
+                    <a href="#" class="nav_link prod">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span class="navlink">Product</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="nav_link catego">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class="navlink">Category</span>
+                    </a>
+                </li>
+                <li class="menu_item" >
+                    <a href="#" class="nav_link order">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </span>
+                        <span class="navlink">Order Status</span>
+                    </a>
+                </li>
+                <li class="menu_item" >
+                    <a class="nav_link lstord">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-list-ol"></i>
+                        </span>
+                        <span class="navlink">Last Order</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="nav_link logout">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </span>
+                        <span class="navlink">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="contai">
+            <header>
+                <h3>List Products</h3>
+            </header>
+            <div class="table-wrapped">
+                <table class="table-products">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>img</th>
+                            <th>category</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbdyprod">
+
+
+                    </tbody>
+
+                </table>
+                <div id="loading-icon" class="loading-icon"></div>
+                <button class="btn btn-add">
+                    Add Product
+                </button>
+
+            </div>
+            <div class="add-model model-wrapper">
+                <div class="model">
+                    <div class="model-header">
+                        <h3>Add New Product</h3>
+                    </div>
+                    <div class="model-body">
+                        <form action="" class="form" autocomplete="off">
+                            <input type="text" name="prodname" id="nameid" placeholder="Name" required>
+                            <input type="url" name="mainimgurl" id="img1id" placeholder="Main Img Url" required>
+                            <input type="url" name="side1imgurl" id="img2id" placeholder="Side 1 Img Url" required>
+                            <input type="url" name="side2imgurl" id="img3id" placeholder="Side 2 Img Url" required>
+                            <input type="text" name="category" id="catid" placeholder="Category" required>
+                            <input type="number" name="price" id="priceid" placeholder="Price" min="1" required>
+                            <textarea id="descrid" name="description" rows="6" cols="44"
+                                placeholder="Description"></textarea>
+                            <input type="number" name="quantity" id="quanid" placeholder="Quantity" min="0" required>
+                            <button class="btn btn-model" type="submit">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer" id="about">
+        
+              <div class="row">
+                Sharing with our Customer Your Perfect Products
+              </div>
+              <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+        
+             
+        
+              <div class="row">
+                HandMade Copyright © 2023 ITI Students - All rights reserved
+              </div>
+            </div>
+          </footer>
+
+    </div>
+
+    <script src="Prodcrud.js"></script>
+    <script type="module" src="Prodcruddata.js"></script>
+</body>
+
+</html>

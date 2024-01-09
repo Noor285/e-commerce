@@ -1,0 +1,118 @@
+:root {
+    --primary-color:  #f5f5f5;
+    --secondary-color:rgb(197, 184, 121) ;
+    --tertiary-color: #333;
+    --gray-color: #b0b0b0;
+    --success-color: #09c372;
+    --error-color: #f70233;
+    --main-color: #333;
+    --prim-color: rgb(197, 184, 121);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+}
+
+#form{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10vh auto 10vh auto;
+    padding: 45px;
+    height: 55%;
+    width: 600px;
+    max-width: 95%;
+    box-shadow: 5px 5px 8px 8px rgb(0, 0, 0, 10%);
+}
+
+
+.logo a{
+    text-align: center;
+    color: var(--prim-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--main-color);
+    font-size: 40px;
+    padding: 1px;
+}
+
+#form h1{
+    color: black;
+    text-align: center;
+}
+
+#form label{
+    margin-bottom: 15px;
+}
+
+#form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+}
+
+#form button:hover{
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input{
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    width: 94%;
+    margin-bottom: 10px;
+}
+
+.input-control input:focus{
+    outline: 0;
+}
+
+.input-control.success input{
+    border-color: var(--success-color);
+}
+
+.input-control.error input{
+    border-color: var(--error-color);
+}
+
+.input-control .error{
+    color: var(--error-color);
+    font-size: 15px;
+    width: 95%;
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 232, 232);
+    display: none;
+}
+
+#form a.sign {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#form a.sign:hover {
+    color: var(--secondary-color);
+}

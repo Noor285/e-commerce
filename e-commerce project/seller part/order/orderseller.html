@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- add CSS -->
+    <link rel="stylesheet" href="orderseller.css">
+    <script src="https://kit.fontawesome.com/2924b03037.js" crossorigin="anonymous"></script>
+    <title>Order</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <h2><span>A</span>NTIQ</h2>
+        </div>
+    </nav>
+    <nav class="sidebar">
+        <div class="menu_content">
+            <div class="profile">
+                <div class="picture">
+                    <a href="#">
+                        <i class="fa-solid fa-pen"></i>
+
+                    </a>
+                    <img src="/seller part/products/img/user.png" alt="">
+                    <div id="sellername">User name</div>
+                </div>
+
+            </div>
+            <ul class="menu_items">
+                <li class="menu_item" >
+                    <a href="#" class="nav_link prod">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span class="navlink">Product</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="nav_link catego">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class="navlink">Category</span>
+                    </a>
+                </li>
+                <li class="menu_item" id="this">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </span>
+                        <span class="navlink">Order Status</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="nav_link lstord">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-list-ol"></i>
+                        </span>
+                        <span class="navlink">Last Order</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="nav_link logout">
+                        <span class="navlink_icon">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </span>
+                        <span class="navlink">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="contai">
+            <header>
+                <h3>Customer Order</h3>
+            </header>
+            <div class="table-wrapped">
+                <table class="table-products">
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Name</th>
+                            <th>img</th>
+                            <th>Category</th>
+                            <th>No</th>
+                            <th>Price</th>
+                            <th>Order Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbdyprod">
+                        <!-- <td >Rofida Mohaned</td>
+                        <td>VinSmoke Sanji</td>
+                        <td>
+                            <img class="imgdiv"  src="https://i.pinimg.com/originals/ef/4b/22/ef4b2250c712f4c191d742300763d548.jpg" >
+                            
+                        </td>
+                        <td>One Piece</td>
+                        <td>2</td>
+                        <td>500$</td>
+                        <td>25/1/2000</td>
+                        <td>
+                            <button class="btn btn-edit">Accept</button>
+                            <button class="btn btn-delete">Reject</button>
+                        </td>
+                         <td>
+                            <p class="statusprreject">Accepted</p>
+                        </td> --> 
+                    </tbody>
+
+                </table>
+                <div id="loading-icon" class="loading-icon"></div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer" id="about">
+        
+              <div class="row">
+                Sharing with our Customer Your Perfect Products
+              </div>
+              <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+        
+             
+        
+              <div class="row">
+                HandMade Copyright © 2023 ITI Students - All rights reserved
+              </div>
+            </div>
+          </footer>
+
+    </div>
+
+    <script src="/seller part/products/Prodcrud.js"></script>
+    <script type="module" src="ordersellerDate.js"></script>
+</body>
+
+</html>

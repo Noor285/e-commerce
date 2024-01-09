@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with firebase</title>
+    <link rel="stylesheet" href="tableProducts.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h3>List Products</h3>
+        </header>
+        <div class="table-wrapped">
+            <table class="table-products">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>img</th>
+                        <th>category</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbdyprod">
+
+
+                </tbody>
+
+            </table>
+
+            <button class="btn btn-add">
+                Add User
+            </button>
+
+        </div>
+        <div class="add-model model-wrapper">
+            <div class="model">
+                <div class="model-header">
+                    <h3>Add New Product</h3>
+                </div>
+                <div class="model-body">
+                    <form action="" class="form" autocomplete="off">
+                        <input type="text" name="prodname" id="nameid" placeholder="Name">
+                        <input type="text" name="mainimgurl" id="img1id" placeholder="Main Img Url">
+                        <input type="url" name="side1imgurl" id="img2id" placeholder="Side 1 Img Url">
+                        <input type="url" name="side2imgurl" id="img3id" placeholder="Side 2 Img Url">
+                        <input type="text" name="category" id="catid" placeholder="Category">
+                        <input type="number" name="price" id="priceid" placeholder="Price" min="1">
+                        <textarea id="descrid" name="description" rows="6" cols="44"
+                            placeholder="Description"></textarea>
+                        <input type="number" name="quantity" id="quanid" placeholder="Quantity" min="0">
+                        <button class="btn btn-model" type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="tableproducts.js">
+    </script>
+
+    <!-- <script type="module" src="firebase.js"></script>
+    <script type="module" src="script.js"></script> -->
+</body>
+
+</html>

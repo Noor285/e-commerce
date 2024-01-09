@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/customer part/css/cart.css">
+    <script src="https://kit.fontawesome.com/2924b03037.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div class="logo">
+            <h2><span>A</span>NTIQ</h2>
+        </div> 
+         <ul>
+            <li><a href="/customer part/html/customerSign.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Contact us</a></li>
+            <li><a href="#"><i class="fa-solid fa-bars"></i></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="/customer part/html/wishlist.html"> <i class="fa-solid fa-heart"></i> Wish List</a></li>
+                        <li><a href="/customer part/html/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                        <li> <a href="/customer part/html/profile.html"><i class="fa-solid fa-user"></i> Profile</i></a></li>
+                        <li class="logout"><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+    <section>
+        <div class="product">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" name="" id="all"></th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody class="cartbody">
+                    <!-- <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <div class="info">
+                                <img src="/customer part/photo/3.jpg" alt="">
+                                <div>
+                                    <P class="pname">Midoryia Izuke</P>
+                                    <span class="tit">Category.:</span>
+                                    <span>Bnha</span>
+                                    
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" value="1">
+                        </td>
+                        <td >
+                            <p class="statusprwait">Not Completed</p>
+                        </td>
+                        <td>$50.00</td>
+                    </tr>
+                    -->
+                </tbody>
+
+            </table>
+            <div id="loading-icon" class="loading-icon"></div>
+        </div>
+        <div class="bottom">
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Waiting total</td>
+                        <td id="Subprice"></td>
+                    </tr>
+                    <tr>
+                        <td>All total</td>
+                        <td id="tax"></td>
+                    </tr>
+                    <tr>
+                        <td>Actual total</td>
+                        <td id="allprice"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="rt">
+                <input type="button" value="Edit" class="btncartedit">
+                <input type="button" value="Delete" class="btncartdel">
+            </div>
+            <div class="check">
+                <input type="submit" value="Check out" id="checkoutbtn">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer" id="about">
+
+            <div class="row">
+                watching our perfect Sellers's Products
+            </div>
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+
+
+            <div class="row">
+                HandMade Copyright © 2023 ITI Students - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="/customer part/js/cart.js"> </script>
+
+</body>
+
+</html>
